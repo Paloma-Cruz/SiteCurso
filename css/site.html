@@ -1,0 +1,47 @@
+<img class="logo" src="https://www.flitapp.com.br/wp-content/uploads/2019/01/logo-flitapp_white.png"/>
+
+<h1>Cadastro de Contas Flit</h1>
+
+<input type="submit" class="botao" name="enviar" value="Concluir Cadastro de Conta"/>
+
+<h2>Dados da pessoa</h2>
+
+<form>
+	<label for="cpf/cnpj">CPF / CNPJ</label>
+	<input id="cpf/cnpj" type="text"  name="cpf/cnpj"/>
+	<label for="nome">Nome</label>
+	<input id="nome" type="text" placeholder="Razão Social" name="name"/>
+	<label for="nomeFantasia">Nome Fantasia</label>
+	<input id="nomeFantasia" type="text" name="nomeFantasia">
+	<label for="tipoDePessoa">Tipo de Pessoa</label>
+	<input id="tipoDePessoa" type="radio" name="jurídica">Jurídica
+	<input id="tipoDePessoa"type="radio" name="física">Física
+</form>
+<ul><li><h3>Gestor</h3></li></ul>
+<form>
+	<label for="Pessoa">Pessoa</label>
+	<input id="Pessoa" type="text" placeholder="Nome da pessoa de contato" name="PessoaDeContato" required/>
+	<label for="telefone">Telefone</label>
+	<input id="telefone" type="tel" placeholder="(XX) XXXX-XXXX" pattern="^\(?\d{2}\)\d{4}[-\s]\d{4}.*?$" size="13" maxlength="13" required/>
+	<label for="celular">Celular</label>
+	<input id="celular" type="cel" placeholder="(XX) XXXXX-XXXX" pattern="^\(?\d{2}\)\d{4}[-\s]\d{4}.*?$" required/>
+	<label for="e-mail">E-mail</label>
+	<input id="e-mail" type="e-mail" placeholder="E-mail do Gestor" required/>
+</form>
+<ul><li><h3>Plano</h3></li></ul>
+<form>
+	<label for="tipo">Tipo</label>
+	<select name="tipo">
+		<option value="gratuito">Gratuito</option>
+		<option value="basico">Básico</option>
+		<option value="controle">Controle</option>
+		<option value="eficiente">Eficiente</option>
+		<option value="personalizado">Personalizado</option>
+	</select>
+	<label for="tab">Quantidade Flit Tab</label>
+	<input id="tab" type="number" required/>
+	<label for="users">Quantidade de Usuários</label>
+	<input id="users" type="number" required/>
+	<label for="valor">Valor do Plano</label>
+	<input id="valor" type="valor" required/>
+</form>
